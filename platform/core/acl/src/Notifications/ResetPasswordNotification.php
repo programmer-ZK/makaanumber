@@ -56,7 +56,7 @@ class ResetPasswordNotification extends Notification
         EmailHandler::setModule('acl')
             ->setVariableValue('reset_link', route('access.password.reset', ['token' => $this->token]));
 
-        $template = 'register_template';
+        $template = 'password-reminder';
         $content = EmailHandler::prepareData(EmailHandler::getTemplateContent($template, 'core'));
 
         return (new MailMessage)
