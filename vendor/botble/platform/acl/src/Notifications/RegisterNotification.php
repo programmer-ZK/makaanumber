@@ -8,7 +8,7 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Support\HtmlString;
 use Throwable;
 
-class ResetPasswordNotification extends Notification
+class RegisterNotification extends Notification
 {
     /**
      * The password reset token.
@@ -56,7 +56,7 @@ class ResetPasswordNotification extends Notification
         EmailHandler::setModule('acl')
             ->setVariableValue('reset_link', route('access.password.reset', ['token' => $this->token]));
 
-        $template = 'password-reminder';
+        $template = 'register_template';
         $content = EmailHandler::prepareData(EmailHandler::getTemplateContent($template, 'core'));
 
         return (new MailMessage)
