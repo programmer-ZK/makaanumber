@@ -85,7 +85,7 @@ class ResetPassword extends Notification
   {
     return (new MailMessage)
       ->subject(Lang::get('Reset Password Notification'))
-      ->line(Lang::get('We have received a request to reset your password. asdds'))
+      ->line(Lang::get('We have received a request to reset your password.'))
       ->line(Lang::get('If you did not make this request then please ignore this email.'))
       ->line(Lang::get('Or, if you wish to do so! please click below to create a new password.'))
       ->action(Lang::get('Reset Password'), $url)
