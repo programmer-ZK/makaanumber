@@ -44,20 +44,20 @@ label{
           <input type="hidden" name="super_user" value="0" />
           <div class="form-group ">
             <label for="exampleInputEmail1" style="color: black;">Email</label>
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{old('email')}}" placeholder="Email" required>
           </div>
           <section class="row justify-content-center">
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color: black;">Phone (optional)</label>
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+971 55 xxxxxx">
+                <input type="tel" class="form-control" value="{{old('phone')}}" id="phone" name="phone" placeholder="+971 55 xxxxxx">
               </div>
             </section>
 
             <section class="col-6 ">
               <div class="form-group">
                 <label for="exampleInputEmail1" style="color: black;">User Name</label>
-                <input type="text" class="form-control" name="name" placeholder="User Name" required>
+                <input type="text" class="form-control" value="{{old('name')}}" name="name" placeholder="User Name" required>
 
               </div>
             </section>
@@ -67,14 +67,14 @@ label{
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color: black;">First Name</label>
-                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+                <input type="text" class="form-control" value="{{old('fname')}}" id="fname" name="fname" placeholder="First Name" required>
               </div>
             </section>
 
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color: black;">Last Name</label>
-                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required>
+                <input type="text" class="form-control" value="{{old('lname')}}" id="lname" name="lname" placeholder="Last Name" required>
               </div>
             </section>
           </section>
@@ -134,20 +134,20 @@ label{
           <input type="hidden" name="super_user" value="0" />
           <div class="form-group">
             <label for="exampleInputEmail1" style="color:black;">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Email" required>
+            <input type="email" class="form-control" id="exampleInputEmail1" value="{{old('email')}}" name="email" aria-describedby="emailHelp" placeholder="Email" required>
           </div>
           <section class="row justify-content-center">
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color:black;">Phone (optional)</label>
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="+971 55 xxxxxx">
+                <input type="tel" class="form-control"   value="{{old('phone')}}" id="phone" name="phone" placeholder="+971 55 xxxxxx">
               </div>
             </section>
 
             <section class="col-6 ">
               <div class="form-group" style="color:black;">
                 <label for="exampleInputEmail1">User Name</label>
-                <input type="text" class="form-control" placeholder="User Name" name="name" required>
+                <input type="text" class="form-control" placeholder="User Name" value="{{old('name')}}" name="name" required>
 
               </div>
             </section>
@@ -157,14 +157,14 @@ label{
             <section class="col-6 ">
               <div class="form-group" style="color:black;">
                 <label for="phone">First Name</label>
-                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+                <input type="text" class="form-control" value="{{old('fname')}}" id="fname" name="fname" placeholder="First Name" required>
               </div>
             </section>
 
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color:black;">Last Name</label>
-                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required>
+                <input type="text" class="form-control" value="{{old('lname')}}" id="lname" name="lname" placeholder="Last Name" required>
               </div>
             </section>
           </section>
