@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use EmailHandler;
+use Illuminate\Support\HtmlString;
+use Illuminate\Notifications\Messages\MailMessage;
 use App\Models\UserModel;
 use App\Models\Document;
 use Hash;
@@ -16,7 +19,7 @@ use RvMedia;
 class UserController extends Controller
 {
   public function agencySignUp(Request $request)
-  {
+   {
 
     $this->validate($request, [
       'password'     => 'min:6',
@@ -172,11 +175,22 @@ class UserController extends Controller
         $to_email = $request->email;
         $body = $_SERVER['SERVER_NAME'] . "/activation/$randomString";
         $data = array("name" => $to_name, "body" => $body);
-        Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
-          $message->to($to_email, $to_name)
-            ->subject("Account Activation Email Makanumber.com");
-          $message->from("noreply@makanumber.com", "Makanumber");
-        });
+
+        $template = 'confirm-email';
+        $content = EmailHandler::prepareData(EmailHandler::getTemplateContent($template));
+        
+        (new MailMessage)
+        ->view(['html' => new HtmlString($content)])
+        ->subject(EmailHandler::getTemplateSubject($template));
+
+        // Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
+        //   $message->to($to_email, $to_name)
+        //     ->view(['html' => new HtmlString($content)])
+        //     ->subject("Account Activation Email Makanumber.com");
+        //   $message->from("noreply@makanumber.com", "Makanumber");
+        // });
+
+            // ->subject(EmailHandler::getTemplateSubject($template));
 
         return redirect()->back()->with('success', 'User Created Successfully, An activation email has been sent to your email. Please verify your account and get started.');
       } else {
