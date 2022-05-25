@@ -49,7 +49,7 @@ class UserController extends Controller
     $ifEmailExists = DB::table('users')->where('email', $request->email)->value('email');
     if ($ifEmailExists == $request->email) {
       // echo "<script>alert('$ifEmailExists already exists!')</script>";
-      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register');
+      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')->withInput();
     } else {
       if ($user->save()) {
 
@@ -142,7 +142,7 @@ class UserController extends Controller
     $ifEmailExists = DB::table('users')->where('email', $request->email)->value('email');
     if ($ifEmailExists == $request->email) {
       // echo "<script>alert('$ifEmailExists already exists!')</script>";
-      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register');
+      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')->withInput();
     } else {
       if ($user->save()) {
 
