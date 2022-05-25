@@ -48,8 +48,7 @@ class ResetPasswordNotification extends Notification
         EmailHandler::setModule(REAL_ESTATE_MODULE_SCREEN_NAME)
             ->setVariableValue('reset_link', route('public.account.password.reset', ['token' => $this->token]));
 
-        $template = 'register_template';
-        
+        $template = 'password-reminder';
         $content = EmailHandler::prepareData(EmailHandler::getTemplateContent($template));
 
         return (new MailMessage)
