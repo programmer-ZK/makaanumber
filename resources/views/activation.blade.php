@@ -1,6 +1,4 @@
 
-{{ header }}
-
 <h1>
   Hello {{ $name }}, <br>
 </h1>
@@ -35,5 +33,3 @@
   <br>
   Team MKNB
 </p>
-
-{{ footer }}
