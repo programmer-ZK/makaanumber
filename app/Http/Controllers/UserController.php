@@ -176,7 +176,7 @@ class UserController extends Controller
         $body = $_SERVER['SERVER_NAME'] . "/activation/$randomString";
         $data = array("name" => $to_name, "body" => $body);
 
-        Mail::send("register_template", $data, function ($message) use ($to_name, $to_email) {
+        Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
           $message->to($to_email, $to_name)
             ->subject("Account Activation Email Makanumber.com");
           $message->from("noreply@makanumber.com", "Makanumber");
