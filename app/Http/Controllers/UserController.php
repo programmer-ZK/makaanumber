@@ -53,9 +53,9 @@ class UserController extends Controller
     if ($ifEmailExists == $request->email) {
       // echo "<script>alert('$ifEmailExists already exists!')</script>";
 <<<<<<< HEAD
-      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')->withInput();
+      return redirect()->back()->with('danger', 'An account with this email already exists, Kindly use different email address')->withInput();
 =======
-      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')
+      return redirect()->back()->with('danger', 'An account with this email already exists, Kindly use different email address')
         ->withInput();
 >>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
     } else {
@@ -151,9 +151,9 @@ class UserController extends Controller
     if ($ifEmailExists == $request->email) {
       // echo "<script>alert('$ifEmailExists already exists!')</script>";
 <<<<<<< HEAD
-      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')->withInput();
+      return redirect()->back()->with('danger', 'An account with this email already exists, Kindly use different email address')->withInput();
 =======
-      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')
+      return redirect()->back()->with('danger', 'An account with this email already exists, Kindly use different email address')
         ->withInput();
 >>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
     } else {
