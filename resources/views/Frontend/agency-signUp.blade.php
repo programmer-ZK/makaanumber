@@ -44,20 +44,32 @@ label{
           <input type="hidden" name="super_user" value="0" />
           <div class="form-group ">
             <label for="exampleInputEmail1" style="color: black;">Email</label>
+<<<<<<< HEAD
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" value="{{ old('email') }}" required>
+=======
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{old('email')}}" placeholder="Email" required>
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
           </div>
           <section class="row justify-content-center">
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color: black;">Phone (optional)</label>
+<<<<<<< HEAD
                 <input type="tel" class="form-control" id="phone"  value="{{ old('phone') }}" name="phone" placeholder="+971 55 xxxxxx">
+=======
+                <input type="tel" class="form-control" value="{{old('phone')}}" id="phone" name="phone" placeholder="+971 55 xxxxxx">
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
               </div>
             </section>
 
             <section class="col-6 ">
               <div class="form-group">
                 <label for="exampleInputEmail1" style="color: black;">User Name</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" name="name"  value="{{ old('name') }}" placeholder="User Name" required>
+=======
+                <input type="text" class="form-control" value="{{old('name')}}" name="name" placeholder="User Name" required>
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
 
               </div>
             </section>
@@ -67,14 +79,22 @@ label{
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color: black;">First Name</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" id="fname"  value="{{ old('fname') }}" name="fname" placeholder="First Name" required>
+=======
+                <input type="text" class="form-control" value="{{old('fname')}}" id="fname" name="fname" placeholder="First Name" required>
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
               </div>
             </section>
 
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color: black;">Last Name</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" id="lname"  value="{{ old('lname') }}"  name="lname" placeholder="Last Name" required>
+=======
+                <input type="text" class="form-control" value="{{old('lname')}}" id="lname" name="lname" placeholder="Last Name" required>
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
               </div>
             </section>
           </section>
@@ -134,20 +154,32 @@ label{
           <input type="hidden" name="super_user" value="0" />
           <div class="form-group">
             <label for="exampleInputEmail1" style="color:black;">Email</label>
+<<<<<<< HEAD
             <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Email"  value="{{ old('email') }}" required>
+=======
+            <input type="email" class="form-control" id="exampleInputEmail1" value="{{old('email')}}" name="email" aria-describedby="emailHelp" placeholder="Email" required>
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
           </div>
           <section class="row justify-content-center">
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color:black;">Phone (optional)</label>
+<<<<<<< HEAD
                 <input type="tel" class="form-control" id="phone"  value="{{ old('phone') }}" name="phone" placeholder="+971 55 xxxxxx">
+=======
+                <input type="tel" class="form-control"   value="{{old('phone')}}" id="phone" name="phone" placeholder="+971 55 xxxxxx">
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
               </div>
             </section>
 
             <section class="col-6 ">
               <div class="form-group" style="color:black;">
                 <label for="exampleInputEmail1">User Name</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" placeholder="User Name"  value="{{ old('name') }}" name="name" required>
+=======
+                <input type="text" class="form-control" placeholder="User Name" value="{{old('name')}}" name="name" required>
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
 
               </div>
             </section>
@@ -157,14 +189,22 @@ label{
             <section class="col-6 ">
               <div class="form-group" style="color:black;">
                 <label for="phone">First Name</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" id="fname"  value="{{ old('fname') }}" name="fname" placeholder="First Name" required>
+=======
+                <input type="text" class="form-control" value="{{old('fname')}}" id="fname" name="fname" placeholder="First Name" required>
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
               </div>
             </section>
 
             <section class="col-6 ">
               <div class="form-group">
                 <label for="phone" style="color:black;">Last Name</label>
+<<<<<<< HEAD
                 <input type="text" class="form-control" id="lname"  value="{{ old('lname') }}" name="lname" placeholder="Last Name" required>
+=======
+                <input type="text" class="form-control" value="{{old('lname')}}" id="lname" name="lname" placeholder="Last Name" required>
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
               </div>
             </section>
           </section>

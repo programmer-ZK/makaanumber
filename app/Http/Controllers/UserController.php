@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use EmailHandler;
+use Illuminate\Support\HtmlString;
+use Illuminate\Notifications\Messages\MailMessage;
 use App\Models\UserModel;
 use App\Models\Document;
 use Hash;
@@ -49,7 +52,12 @@ class UserController extends Controller
     $ifEmailExists = DB::table('users')->where('email', $request->email)->value('email');
     if ($ifEmailExists == $request->email) {
       // echo "<script>alert('$ifEmailExists already exists!')</script>";
+<<<<<<< HEAD
       return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')->withInput();
+=======
+      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')
+        ->withInput();
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
     } else {
       if ($user->save()) {
 
@@ -142,7 +150,12 @@ class UserController extends Controller
     $ifEmailExists = DB::table('users')->where('email', $request->email)->value('email');
     if ($ifEmailExists == $request->email) {
       // echo "<script>alert('$ifEmailExists already exists!')</script>";
+<<<<<<< HEAD
       return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')->withInput();
+=======
+      return redirect()->back()->with('danger', 'User Email Already Exist! You cannot register')
+        ->withInput();
+>>>>>>> ed2c2b8f4559272dfccea71e8c8e4b3cd69c0267
     } else {
       if ($user->save()) {
 
@@ -172,11 +185,13 @@ class UserController extends Controller
         $to_email = $request->email;
         $body = $_SERVER['SERVER_NAME'] . "/activation/$randomString";
         $data = array("name" => $to_name, "body" => $body);
+
         Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
           $message->to($to_email, $to_name)
             ->subject("Account Activation Email Makanumber.com");
           $message->from("noreply@makanumber.com", "Makanumber");
         });
+
 
         return redirect()->back()->with('success', 'User Created Successfully, An activation email has been sent to your email. Please verify your account and get started.');
       } else {
