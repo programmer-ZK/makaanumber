@@ -176,22 +176,19 @@ class UserController extends Controller
         $body = $_SERVER['SERVER_NAME'] . "/activation/$randomString";
         $data = array("name" => $to_name, "body" => $body);
 
+        $template = 'confirm-email';
+        $content = EmailHandler::prepareData(EmailHandler::getTemplateContent($template));
 
-        // (new MailMessage)
-        // ->view(['html' => new HtmlString($content)])
-        // ->subject(EmailHandler::getTemplateSubject($template));
+        (new MailMessage)
+        ->view(['html' => new HtmlString($content)])
+        ->subject(EmailHandler::getTemplateSubject($template));
 
         Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
-          $template = 'confirm-email';
-          $content = EmailHandler::prepareData(EmailHandler::getTemplateContent($template));
-
           $message->to($to_email, $to_name)
-            ->view(['html' => new HtmlString($content)])
             ->subject("Account Activation Email Makanumber.com");
           $message->from("noreply@makanumber.com", "Makanumber");
         });
 
-            // ->subject(EmailHandler::getTemplateSubject($template));
 
         return redirect()->back()->with('success', 'User Created Successfully, An activation email has been sent to your email. Please verify your account and get started.');
       } else {
