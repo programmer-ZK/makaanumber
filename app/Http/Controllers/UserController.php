@@ -187,7 +187,7 @@ class UserController extends Controller
 
   public function activation(Request $request, $token)
   {
-
+    
     $id = DB::table('users')->where('remember_token', '=', $token)->value('id');
     $name = DB::table('users')->where('remember_token', '=', $token)->value('first_name');
     $activations_id = DB::table('activations')->where('user_id', '=', $id)->value('completed');
