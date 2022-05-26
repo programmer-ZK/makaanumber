@@ -5,9 +5,12 @@ body{
 }
 
 /* MULTIPLE SELECT */
-.select2-selection {
+/* .select2-selection {
   min-height: 38px !important;
   border-color: #ced4da !important;
+} */
+span.select2-container{
+  min-height: 38px !important;
 }
 .multiple-select{
   margin-left: 10px;
