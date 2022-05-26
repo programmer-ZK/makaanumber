@@ -90,7 +90,7 @@ Please click on the link below to activate your account and get started.
                                                             <tbody>
                                                             <tr>
                                                                 <td style="padding:15px;border-collapse:collapse; height: 100px; line-height: 70px">
-                                                                    <a href="{{ site_url }}" style="color: #fff; text-decoration: none !important;"
+                                                                    <a href="{{ url() }}" style="color: #fff; text-decoration: none !important;"
                                                                         target="_blank">
                                                                         <img title="Logo"
                                                                               src="{{ site_logo }}"
