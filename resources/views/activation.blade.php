@@ -110,7 +110,7 @@
                                                                    style="border-spacing: 0;">
                                                                 <tbody>
                                                                 <tr>
-                                                                    <td style="font-size: 13px;line-height: 22px;color: #fff;padding: 15px;font-weight: normal;text-align: center;font-family: Tahoma, Helvetica, Arial, sans-serif;border-collapse: collapse;"><span style="display: inline-block; height: 100px; line-height: 100px;">{{ date("Y-m-d"); }}</span></td>
+                                                                    <td style="font-size: 13px;line-height: 22px;color: #fff;padding: 15px;font-weight: normal;text-align: center;font-family: Tahoma, Helvetica, Arial, sans-serif;border-collapse: collapse;"><span style="display: inline-block; height: 100px; line-height: 100px;">{{ $date_time }}</span></td>
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
