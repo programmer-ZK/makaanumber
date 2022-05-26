@@ -9,9 +9,6 @@ body{
   min-height: 38px !important;
   border-color: #ced4da !important;
 } */
-span.select2-container{
-  min-height: 38px !important;
-}
 .multiple-select{
   margin-left: 10px;
   animation: cssAnimation 0s 5s forwards;
