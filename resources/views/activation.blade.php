@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Makanumber</title>
-    <link rel="stylesheet" href="site_url"> 
+    <title>Makanumber</title>logo
+    <link rel="stylesheet" href="{{ url('/vendor/core/core/base/css/email.css') }}"> 
 </head>
 <body style="margin: 0;">
 <table width="100%" id="mainStructure" border="0" cellspacing="0" cellpadding="0"
@@ -81,7 +81,7 @@
                                                                         <a href="site_url" style="color: #fff; text-decoration: none !important;"
                                                                            target="_blank">
                                                                             <img title="Logo"
-                                                                                 src="site_logo.jpg"
+                                                                                 src="https://live.makanumber.com/frontend-images/logo.svg"
                                                                                  height="100"
                                                                                  style="max-width: 200px;display: block !important;height: auto !important;"
                                                                                  alt="Logo" border="0"
@@ -306,7 +306,7 @@
                                                     <!-- start COPY RIGHT content -->
                                                     <td valign="top" align="center"
                                                         style="font-size: 11px;line-height: 22px;font-family: Arial,Tahoma, Helvetica, sans-serif;color: #919191;font-weight: normal;border-collapse: collapse;">
-                                                        Email is sent from site_title.
+                                                        Email is sent from makanumber.
                                                     </td>
                                                     <!-- end COPY RIGHT content -->
                                                 </tr>
