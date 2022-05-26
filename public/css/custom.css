@@ -5,10 +5,11 @@ body{
 }
 
 /* MULTIPLE SELECT */
-/* .select2-selection {
+.select2-selection {
   min-height: 38px !important;
   border-color: #ced4da !important;
-} */
+  text-align:left;
+}
 .multiple-select{
   margin-left: 10px;
   animation: cssAnimation 0s 5s forwards;
