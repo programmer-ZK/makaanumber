@@ -144,6 +144,7 @@ class UserController extends Controller
 
 
     $ifEmailExists = DB::table('users')->where('email', $request->email)->value('email');
+    
     if ($ifEmailExists == $request->email) {
       // echo "<script>alert('$ifEmailExists already exists!')</script>";
       return redirect()->back()->with('danger', 'An account with this email already exists, Kindly use different email address.')
