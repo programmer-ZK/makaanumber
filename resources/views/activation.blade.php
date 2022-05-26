@@ -81,7 +81,7 @@
                                                                         <a href="site_url" style="color: #fff; text-decoration: none !important;"
                                                                            target="_blank">
                                                                             <img title="Logo"
-                                                                                 src="https://live.makanumber.com/frontend-images/navbarlogo.png"
+                                                                                 src="{{url('/frontend-images/navbarlogo.png"')}}
                                                                                  height="100"
                                                                                  style="max-width: 200px;display: block !important;height: auto !important;"
                                                                                  alt="Logo" border="0"
