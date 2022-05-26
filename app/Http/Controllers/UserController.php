@@ -113,6 +113,8 @@ class UserController extends Controller
 
   public function memberSignUp(Request $request)
   {
+
+
     $this->validate(
       $request,
       [
@@ -144,6 +146,7 @@ class UserController extends Controller
 
 
     $ifEmailExists = DB::table('users')->where('email', $request->email)->value('email');
+    
     if ($ifEmailExists == $request->email) {
       // echo "<script>alert('$ifEmailExists already exists!')</script>";
       return redirect()->back()->with('danger', 'An account with this email already exists, Kindly use different email address.')
@@ -175,8 +178,9 @@ class UserController extends Controller
 
         $to_name = $request->name;
         $to_email = $request->email;
+        $date_time = Carbon::now()->toDateTimeString();
         $body = $_SERVER['SERVER_NAME'] . "/activation/$randomString";
-        $data = array("name" => $to_name, "body" => $body);
+        $data = array("name" => $to_name, "body" => $body, 'date_time' => $date_time);
 
         Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
           $message->to($to_email, $to_name)
