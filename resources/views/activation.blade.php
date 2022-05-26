@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Makanumber</title>logo
+    <title>Makanumber</title>
     <link rel="stylesheet" href="{{ url('/vendor/core/core/base/css/email.css') }}"> 
 </head>
 <body style="margin: 0;">
@@ -81,7 +81,7 @@
                                                                         <a href="site_url" style="color: #fff; text-decoration: none !important;"
                                                                            target="_blank">
                                                                             <img title="Logo"
-                                                                                 src="https://live.makanumber.com/frontend-images/logo.svg"
+                                                                                 src="https://live.makanumber.com/frontend-images/logo.png"
                                                                                  height="100"
                                                                                  style="max-width: 200px;display: block !important;height: auto !important;"
                                                                                  alt="Logo" border="0"
