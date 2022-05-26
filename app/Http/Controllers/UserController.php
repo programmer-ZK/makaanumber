@@ -113,9 +113,10 @@ class UserController extends Controller
 
   public function memberSignUp(Request $request)
   {
-    return Carbon::now();
+    $time = Carbon::now();
+    return $time->format('Y-m-d');
     exit();
-    
+
     $this->validate(
       $request,
       [
