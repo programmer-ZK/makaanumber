@@ -8,8 +8,7 @@ body{
 .select2-selection {
   min-height: 38px !important;
   border-color: #ced4da !important;
-  padding-top: 4px;
-  color: #000;
+  padding-top: 3px;
 }
 .multiple-select{
   margin-left: 10px;
