@@ -9,6 +9,7 @@ body{
   min-height: 38px !important;
   border-color: #ced4da !important;
   padding-top: 4px;
+  color: #000;
 }
 .multiple-select{
   margin-left: 10px;
