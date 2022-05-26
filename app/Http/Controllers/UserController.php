@@ -113,6 +113,9 @@ class UserController extends Controller
 
   public function memberSignUp(Request $request)
   {
+    return Carbon::now();
+    exit();
+    
     $this->validate(
       $request,
       [
