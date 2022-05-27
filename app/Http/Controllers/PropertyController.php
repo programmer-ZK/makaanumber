@@ -79,7 +79,7 @@ class PropertyController extends Controller
         $image->move($destinationPath, $name);
         array_push($img_array, $name);
       }
-    }0
+    }
 
     $property->images = json_encode($img_array);
     $video = $request->file('prop_video');
