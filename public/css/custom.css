@@ -7,12 +7,12 @@ body{
 /* MULTIPLE SELECT */
 .select2-search__field::-webkit-input-placeholder,
 .select2-search__field::placeholder {
-    color: red !important;
+  padding-top: 3px;
+  color: red !important;
 }
 .select2-selection {
   min-height: 38px !important;
   border-color: #ced4da !important;
-  padding-top: 3px;
 }
 .multiple-select{
   margin-left: 10px;
