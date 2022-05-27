@@ -1,15 +1,18 @@
 
 $(document).ready(function() {
+
   $("#multipleSelect").show();
+
   $("#multipleSelect").select2({
     width:"100%",
     placeholder: " Emirates/Locations",
     allowClear: true
   });
-  
+
   $('#multipleSelect').on('select2:change', function(){
     $(".select2-selection").css('padding-top', '3px');
   });
+
 
   $('#multipleSelect').on('select2:close', function(e){
     $(".select2-selection").css('padding-top', '3px');
