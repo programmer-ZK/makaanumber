@@ -9,7 +9,7 @@ $(document).ready(function() {
     allowClear: true
   });
 
-  $('#multipleSelect').on('select2:change', function(){
+  $('#multipleSelect').on('select2:opening', function(){
     $(".select2-selection").css('padding-top', '3px');
   });
 
