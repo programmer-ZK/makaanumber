@@ -9,6 +9,10 @@ $(document).ready(function() {
     allowClear: true
   });
 
+  $(document).on('click', '#multiple-select', function(){
+    $(".select2-selection").css('padding-top', '3px');
+  });
+
   $('#multipleSelect').on('select2:opening', function(){
     $(".select2-selection").css('padding-top', '3px');
   });
