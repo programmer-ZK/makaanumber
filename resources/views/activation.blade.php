@@ -170,7 +170,7 @@
                               <img title="Logo"
                               src="https://live.makanumber.com/frontend-images/logo.png"
                               height="40"
-                              style="padding-left: 5px; position:absolute; top: 0; max-width: 100px;display: inline-block !important;height: auto !important;"
+                              style="padding-left: 5px; position:absolute; top: 10px; max-width: 100px;display: inline-block !important;height: auto !important;"
                               alt="Logo" border="0"
                               hspace="0"
                               vspace="0">
