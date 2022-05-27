@@ -6,9 +6,8 @@ body{
 
 /* MULTIPLE SELECT */
 .select2-selection {
-  min-height: 38px !important;
+  min-height: 39px !important;
   border-color: #ced4da !important;
-  padding: 3px;
 }
 .multiple-select{
   margin-left: 10px;
