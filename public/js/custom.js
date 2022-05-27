@@ -9,17 +9,6 @@ $(document).ready(function() {
     allowClear: true
   });
 
-  $(document).on('click', function(){
-    $(".select2-selection").css('padding-bottom', '-3px');
-  });
-
-  $('#multipleSelect').on('select2:opening', function(){
-    $(".select2-selection").css('padding-top', '3px');
-  });
-  $('#multipleSelect').on('select2:close', function(){
-    $(".select2-selection").css('padding-top', '3px');
-  });
-
 
   $('#multipleSelect').on('select2:close', function(e){
     $(".select2-selection").css('padding-top', '3px');

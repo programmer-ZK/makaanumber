@@ -12,7 +12,7 @@ body{
   min-height: 38px !important;
   border-color: #ced4da !important;
   padding-top: 3px;
-  /* padding-bottom: -3px; */
+  padding-bottom: -3px;
 }
 .multiple-select{
   margin-left: 10px;
