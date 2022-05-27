@@ -7,7 +7,7 @@ $(document).ready(function() {
     allowClear: true
   });
   
-  $('#multipleSelect').on('select2:clear', function(e){
+  $('#multipleSelect').on('select2:change', function(){
     $(".select2-selection").css('padding-top', '3px');
   });
 
