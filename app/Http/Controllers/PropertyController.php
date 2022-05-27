@@ -66,6 +66,7 @@ class PropertyController extends Controller
     $property->auto_renew = 0;
     $property->never_expired = 1;
     $property->expire_date = now()->addDays(30);
+    $property->status = $request->property;
 
     $images = $request->file('prop_images');
     $img_array = [];
@@ -78,7 +79,7 @@ class PropertyController extends Controller
         $image->move($destinationPath, $name);
         array_push($img_array, $name);
       }
-    }
+    }0
 
     $property->images = json_encode($img_array);
     $video = $request->file('prop_video');
@@ -164,7 +165,7 @@ class PropertyController extends Controller
       ->select('*')
       ->where('re_properties.status', 'selling')
       ->where('category_id', 5)
-      ->where('is_featured', 1)
+      ->where('is_featured', 1)5
       ->get();
     //   dd($property);
     return view('Frontend.buyLand')->with(compact('property'));
