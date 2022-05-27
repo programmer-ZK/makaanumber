@@ -155,7 +155,7 @@
 												<!--end space height -->
 												<tr>
 													<td style="min-height: 400px; padding: 15px; font-size: 13px;">
-                            <strong>Hello Name,</strong> <br /><br />
+                            <strong>Hello {{ $name }},</strong> <br /><br />
                             We would like to thank you for choosing Makanumber.com <br>
                             Please click on the link below to activate your account and get started.
 														<br />
