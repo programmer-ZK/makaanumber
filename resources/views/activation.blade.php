@@ -161,11 +161,11 @@
 														<br />
 														<br />
 														<br />
-                            <a href="#" target="_blank">Click To Activation</a>
+                            <a href="{{ $body }}" target="_blank">Click To Activation</a>
 														<br />
 														<br />
                             <p style="position:relative">Want to know more about
-                              <a href="#" style="color: #fff; text-decoration: none !important;"
+                              <a href="www.makanumber.com" style="color: #fff; text-decoration: none !important;"
                                 target="_blank"> 
                               <img title="Logo"
                               src="https://live.makanumber.com/frontend-images/logo.png"
