@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Makanumber</title>
-    <link rel="stylesheet" href="https//live.makanumber.com/vendor/core/core/base/css/email.css">
+    <link rel="stylesheet" href="email.css">
   </head>
   <body style="margin: 0;">
     <table width="100%" id="mainStructure" border="0" cellspacing="0" cellpadding="0"
@@ -78,7 +78,7 @@
                                               <tbody>
                                                 <tr>
                                                   <td style="padding:15px;border-collapse:collapse; height: 100px; line-height: 70px">
-                                                    <a href="site_url" style="color: #fff; text-decoration: none !important;"
+                                                    <a href="#" style="color: #fff; text-decoration: none !important;"
                                                       target="_blank">
                                                     <img title="Logo"
                                                       src="https://live.makanumber.com/frontend-images/email-logo.png"
@@ -109,7 +109,7 @@
                                               style="border-spacing: 0;">
                                               <tbody>
                                                 <tr>
-                                                  <td style="font-size: 13px;line-height: 22px;color: #fff;padding: 15px;font-weight: normal;text-align: center;font-family: Tahoma, Helvetica, Arial, sans-serif;border-collapse: collapse;"><span style="display: inline-block; height: 100px; line-height: 100px;">{{ $date_time }}</span></td>
+                                                  <td style="font-size: 13px;line-height: 22px;color: #fff;padding: 15px;font-weight: normal;text-align: center;font-family: Tahoma, Helvetica, Arial, sans-serif;border-collapse: collapse;"><span style="display: inline-block; height: 100px; line-height: 100px;"> date time</span></td>
                                                 </tr>
                                               </tbody>
                                             </table>
@@ -155,12 +155,28 @@
                         <!--end space height -->
                         <tr>
                           <td style="min-height: 400px; padding: 15px; font-size: 13px;">
-                            <strong>Hello {{ $name }},</strong> <br /><br />
+                            <strong>Hello Name,</strong> <br /><br />
                             We would like to thank you for choosing Makanumber.com <br>
                             Please click on the link below to activate your account and get started.
 														<br />
-                            <a href="{{ $body }}" target="_blank">Click To Activation</a>
-                            <p>Want to know more about Makanumber</p>
+														<br />
+														<br />
+                            <a href="#" target="_blank">Click To Activation</a>
+														<br />
+														<br />
+                            <p style="position:relative">Want to know more about
+                              <a href="#" style="color: #fff; text-decoration: none !important;"
+                                target="_blank"> 
+                              <img title="Logo"
+                              src="https://live.makanumber.com/frontend-images/logo.png"
+                              height="40"
+                              style="padding-left: 5px; position:absolute; bottom: -1px; max-width: 100px;display: inline-block !important;height: auto !important;"
+                              alt="Logo" border="0"
+                              hspace="0"
+                              vspace="0">
+                              </a>
+                            </p>
+														<br />
                             Visit <a href="www.makanumber.com">www.makanumber.com</a>
                             <p>Thankyou for your time.</p>
                             Regards, <br />
@@ -232,7 +248,7 @@
                                                         </tr>
                                                         <tr>
                                                           <td style="font-size: 13px;line-height: 15px; text-align: center; font-family: Arial,Tahoma, Helvetica, sans-serif;color: #a7a9ac;font-weight: normal;border-collapse: collapse;">
-                                                            © Copyright {{ date("Y"); }} . All rights reserved.
+                                                            © Copyright Year . All rights reserved.
                                                           </td>
                                                         </tr>
                                                       </tbody>
