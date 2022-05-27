@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   $("#multipleSelect").select2({
     width:"100%",
-    placeholder: " Emirates/Locations",
+    placeholder: " Cities/Locations",
   });
 
 
