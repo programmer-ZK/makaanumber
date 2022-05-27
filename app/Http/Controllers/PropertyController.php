@@ -165,7 +165,7 @@ class PropertyController extends Controller
       ->select('*')
       ->where('re_properties.status', 'selling')
       ->where('category_id', 5)
-      ->where('is_featured', 1)5
+      ->where('is_featured', 1)
       ->get();
     //   dd($property);
     return view('Frontend.buyLand')->with(compact('property'));
