@@ -9,7 +9,7 @@ $(document).ready(function() {
     allowClear: true
   });
 
-  $(document).on('click', '#multiple-select', function(){
+  $(document).on('click', function(){
     $(".select2-selection").css('padding-top', '3px');
   });
 
