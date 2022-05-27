@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
   $(document).on('click', function(){
-    $(".select2-selection").css('padding-top', '3px');
+    $(".select2-selection").css('padding-bottom', '-3px');
   });
 
   $('#multipleSelect').on('select2:opening', function(){
