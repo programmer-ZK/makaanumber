@@ -12,8 +12,10 @@ body{
   min-height: 38px !important;
   border-color: #ced4da !important;
   padding-top: 3px;
-  padding-bottom: -3px;
 }
+.select2-default {
+  padding-top: 3px;
+  }
 .multiple-select{
   margin-left: 10px;
   animation: cssAnimation 0s 5s forwards;
