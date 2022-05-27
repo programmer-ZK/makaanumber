@@ -8,7 +8,7 @@ $(document).ready(function() {
   });
   
   $('#multipleSelect').on('select2:unselect', function(e){
-    $(".select2-selection").css('padding-top', '3px');
+    $(".select2-selection").css('padding-top', '5px');
   });
 
   $('#multipleSelect').on('select2:close', function(e){
