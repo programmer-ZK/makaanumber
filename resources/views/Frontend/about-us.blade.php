@@ -16,7 +16,7 @@
     </section>
     <section class="col-sm-9 mb-5">
       <div>
-        <img src="/frontend-images/download.png" class="img-fluid" alt="Responsive image">
+        <img src="/frontend-images/download.jpeg" class="img-fluid" alt="Responsive image">
       </div>
 
     </section>
