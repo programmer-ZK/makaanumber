@@ -25,7 +25,7 @@ $emirates = DB::table('states')
         
         <div class="col-lg-1" style="padding-left:0px !important">
 
-          <div class="input-group input border-0">
+          <div class="input-group input border-0" >
             <select class="custom-select" id="purpose" name="purpose" style="color:grey;" required>
               <option value="" selected disabled hidden>Purpose </option>
               <option value="renting" <?= (isset($_GET['purpose']) && $_GET['purpose'] == 'renting') ? "selected" : "" ?>>Rent</option>
