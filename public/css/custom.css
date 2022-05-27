@@ -5,23 +5,11 @@ body{
 }
 
 /* MULTIPLE SELECT */
-.select2-selection--multiple{
-  padding-top: 3px;
-}
 .select2-selection {
   min-height: 38px !important;
   border-color: #ced4da !important;
   padding-top: 3px;
-}
-.select2-search--inline {
-  display: contents; /*this will make the container disappear, making the child the one who sets the width of the element*/
-}
-
-.select2-search__field:placeholder-shown {
-  width: 100% !important; /*makes the placeholder to be 100% of the width while there are no options selected*/
-}
-.select2-default {
-  padding-top: 3px;
+  padding-top: 5px;
 }
 .multiple-select{
   margin-left: 10px;
