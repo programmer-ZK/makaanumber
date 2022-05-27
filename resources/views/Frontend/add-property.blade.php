@@ -80,9 +80,9 @@ $emirates = DB::table('states')
           <div class="col-sm-9">
             <div class="row ml-1">
               <label for="property1"> &nbsp;For Sale </label> &nbsp;
-              <input type="radio" value="selling" class="radio-btn mt-1" id="property1" name="property" checked />&nbsp; &nbsp;
+              <input type="radio" value="sale" class="radio-btn mt-1" id="property1" name="property" checked />&nbsp; &nbsp;
               <label for="property2">For Rent </label> &nbsp;
-              <input type="radio" value="renting" class="radio-btn mt-1" id="property2" name="property" />
+              <input type="radio" value="rent" class="radio-btn mt-1" id="property2" name="property" />
             </div>
           </div>
         </div>

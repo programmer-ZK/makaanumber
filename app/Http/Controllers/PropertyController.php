@@ -66,7 +66,7 @@ class PropertyController extends Controller
     $property->auto_renew = 0;
     $property->never_expired = 1;
     $property->expire_date = now()->addDays(30);
-    $property->status = $request->property;
+    $property->status = ($request->property == 'sale') ? 'selling' : 'renting';
 
     $images = $request->file('prop_images');
     $img_array = [];
