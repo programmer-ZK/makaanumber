@@ -12,6 +12,9 @@ $(document).ready(function() {
   $('#multipleSelect').on('select2:opening', function(){
     $(".select2-selection").css('padding-top', '3px');
   });
+  $('#multipleSelect').on('select2:closing', function(){
+    $(".select2-selection").css('padding-top', '3px');
+  });
 
 
   $('#multipleSelect').on('select2:close', function(e){
