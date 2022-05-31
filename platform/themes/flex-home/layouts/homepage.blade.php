@@ -9,6 +9,8 @@ $property = DB::table('re_properties')
   ->join('re_property_categories', 're_properties.id', '=', 're_property_categories.property_id')
   ->select('*')
   ->where('moderation_status', 'approved')
+  ->orderBy("re_properties.id", "desc")
+  ->limit(12)
   ->get();
 
 $cities23 = DB::select('SELECT cities.id, cities.name, states.name AS stname FROM `cities` JOIN states on cities.state_id = states.id;');
