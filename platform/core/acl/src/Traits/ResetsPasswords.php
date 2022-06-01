@@ -74,7 +74,7 @@ trait ResetsPasswords
         return [
             'token'    => 'required',
             'email'    => 'required|email',
-            'password' => 'required|confirmed|min:8',
+            'password' => 'required|confirmed|min:6',
         ];
     }
 
@@ -166,7 +166,7 @@ trait ResetsPasswords
             return new JsonResponse(['message' => trans($response)], 200);
         }
 
-        return redirect($this->redirectPath())
+        return redirect("/")
             ->with('status', trans($response));
     }
 
