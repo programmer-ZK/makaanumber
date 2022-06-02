@@ -84,7 +84,7 @@ if ($property->type == 'sale') {
           </div>
           <div class="float-right text-left ">
             <span style="font-weight: 700; padding: 0px !important;">{{ implode(', ', $property->categories()->pluck('name')->all()) }}</span>
-            <p>Type</p>
+            <p style="margin-top: 5px">Type</p>
           </div>
         </div>
 
@@ -130,16 +130,40 @@ if ($property->type == 'sale') {
         @foreach($users as $user)
         @if($user)
         <div class="row rowm10 itemagent">
-          <div class="col-lg-8 colm10">
-            <div class="info mt-2">
-              <p style="font-size:18px; font-weight:bold; padding-left: 10px;">
-                {{$user->first_name}} {{$user->last_name}}
-                <br>
-                <span style="font-size: 14px; color: grey;">
-                  {{$user->username}}
+          <div class="col-lg-12 colm10">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="info mt-2">
+                  <p style="font-size:18px; font-weight:bold; padding-left: 10px;">
+                    {{$user->first_name}} {{$user->last_name}}
+                    <br>
+                    <span style="font-size: 14px; color: grey;">
+                      {{$user->username}}
+                    </span>
+                  </p>
+                  
+                </div>  
+              </div>
+              <div class="col-lg-4">
+                <?php
+                $documents = \App\Models\Document::where('user_id', $user['id'])->get();
+                $doc_count = $documents->count();
+                ?>
+
+                @if ($user['avatar_id'])
+                  @if ($doc_count >= 1)
+                  <i class="fas fa-badge-check" aria-hidden="true" style="color:#00b4a2;"></i>
+                  @endif
                 </span>
-              </p>
+                @php
+                $avatar = DB::table('media_files')->where('id', $user['avatar_id'])->first();
+                @endphp
+                <img src="{{ asset('public/storage/' . $avatar->url) }}" style="width:70px; height:70px; border-radius: 50%; margin-top:5px; margin-right:15px;" alt="profile-pic" class="mb-1 userName" />
+                @else
+                @endif
+              </div>
             </div>
+            
           </div>
         </div>
 
