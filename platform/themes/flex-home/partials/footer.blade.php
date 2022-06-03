@@ -249,11 +249,9 @@ alert = function() {
 };
 
 $(document).ready(function() {
-      window.onload = function() {
         $('.loader').fadeOut(500, function() {
           $('.loader').remove();
         });
-      }
     });
   console.log("footer script working!");
 
