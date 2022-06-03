@@ -255,6 +255,8 @@ $(document).ready(function() {
         });
       }
     });
+  console.log("footer script working!");
+
   </script>
 {!! Theme::footer() !!}
 </body>
