@@ -201,6 +201,24 @@ $pkg = [];
     left: 25%;
     width: 100%;
   }
+  
+  @media screen and (max-width: 1440px) {
+    .overlay {
+      top: 32%;
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    .overlay {
+      top: 40%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .overlay {
+      top: 43%;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     #search-form12 {
