@@ -43,6 +43,16 @@
 </head>
 
 <style>
+	.imag-div{
+      height: 100%;
+      width: 100%;
+      background: url('/frontend-images/download.jpeg');
+    }
+	@media screen and (max-width: 425px) {
+      .imag-div{
+      height: 200px !important;
+      }
+    }
 	.main-content {
 		min-height: calc(100vh - 60px);
 	}

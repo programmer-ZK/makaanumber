@@ -5,20 +5,18 @@
 
 @section('content')
 
-<section class="container" style="font-size: 13px;">
-  <section class="row justify-content-center ">
+<section class="container-fluid" style="padding: 15px 10%; font-size: 13px;">
+  <section class="row justify-content-center " style="height: 400px">
     <section class="col-sm-3 mt-5">
-      <p>About us</p>
       <h1 style="font-weight:bold;font-family: 'Montserrat', sans-serif !important;"> Online Real Estate Marketplace</h1>
       <p style="color:#2A2A2A;" class="mt-1">for Buyers, Sellers and Renters</p>
       <button class="btn btn-success px-3 create-btn" style="background-color:#00B4A2;">Create Account</button>
 
     </section>
-    <section class="col-sm-9 mb-5">
-      <div>
-        <img src="/frontend-images/download.jpeg" class="img-fluid" alt="Responsive image">
+    <section class="col-sm-9 mb-5 mt-5">
+      <div class="imag-div" style="">
+        {{-- <img src="/frontend-images/download.jpeg" class="" alt="Responsive image"> --}}
       </div>
-
     </section>
 
 

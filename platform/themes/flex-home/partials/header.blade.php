@@ -53,6 +53,10 @@ if (Auth::user()) {
   <title>Makanumber.com</title>
 
   <style>
+    
+        .nav-link  {
+      font-weight: 800;
+    }
     .add-property {
       background-color: #28BEAE;
       color: white;
@@ -121,8 +125,14 @@ if (Auth::user()) {
       font-size: 40px;
       color: grey;
     }
+    
+
+  
+
 
     @media screen and (max-width: 480px) {
+
+    
 
       .property_icon {
         margin: 10px 0rem;
@@ -157,7 +167,7 @@ if (Auth::user()) {
     }
 
     .sign-in-button {
-      font-weight: 700 !important;
+      font-weight: 800 !important;
     }
 
     :root {
