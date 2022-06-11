@@ -48,6 +48,7 @@
       width: 100%;
       background: url('/frontend-images/download.jpeg');
     }
+
 	@media screen and (max-width: 425px) {
       .imag-div{
       height: 200px !important;
