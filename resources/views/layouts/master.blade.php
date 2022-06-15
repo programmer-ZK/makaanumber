@@ -339,9 +339,9 @@
 					numbers of options according to your choice and preference because home is not just a place. IT’S A
 					FEELING!</p>
 				<div class="row social-icons">
-					<i class="fab fa-facebook-f social-icon ml-2 p-2"></i>
-					<i class="fab fa-twitter social-icon ml-2 p-2"></i>
-					<i class="fab fa-youtube social-icon ml-2 p-2"></i>
+					<div class="social-icon  ml-2 text-center"> <i class="fab fa-facebook-f p-1"></i></div>
+					<div class="social-icon  ml-2 text-center"> <i class="fab fa-twitter p-1"></i></div>
+					<div class="social-icon  ml-2 text-center"> <i class="fab fa-youtube p-1"></i></div>
 				</div>
 			</div>
 

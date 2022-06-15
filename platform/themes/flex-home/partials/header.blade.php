@@ -200,24 +200,34 @@ if (Auth::user()) {
 
 
 
-   <!-- Preloader -->
-   <style>
+  <!-- Preloader -->
+  <style>
     .loader {
       position: fixed;
-      left: 0px;
-      top: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
+      z-index: 9998;
+      background-color: black;
+    }
+  
+    .loader-gif{
+      height: 180px;
       z-index: 9999;
-      background: url('gif/FoBTwy.gif') 50% 50% no-repeat rgb(0,0,0);
     }
   </style>
-
+  
   <!-- {!! Theme::header() !!} -->
 
 </head>
-<div class="loader"></div>
 
+<div class="">
+  <div class="loader">
+    <img class="loader-gif"  src="gif/FoBTwy.gif" alt="">
+  </div>
+</div>  
 
 <body @if (BaseHelper::siteLanguageDirection()=='rtl' ) dir="rtl" @endif style="overflow-x: hidden;">
 
