@@ -52,11 +52,19 @@ $emirates = DB::table('states')
 
 
     <div class="">
-      <div class="img-section">
-        <img class="img-fluid" src="storage\banner\add-property_cover.jpeg"  style="margin-left: auto;
-  margin-right: auto;display: block; filter: brightness(1.1);
-"/>
+    <section class="row  ">
+   
+    <section class="col-sm-12">
+      <div>
+        <img src="/frontend-images/blog-image.jpeg" class="img-fluid" alt="Responsive image" style="margin-left: auto;
+        margin-right: auto;display: block; filter: brightness(1.1);
+      ">
       </div>
+
+    </section>
+
+    
+  </section>
     </div>
 
   </div>
@@ -368,7 +376,7 @@ $emirates = DB::table('states')
                   <span class="fileName"></span>
                   <input type="button" class="uploadButton" id="prop_video" name="prop_video" value="Add Video" />
                 </div>
-                <video controls class="video" style="max-width: 100%; display: none;" ></video >
+                <video controls class="video" style="max-width: 100%; display: none;"></video>
               </div>
 
             </div>
@@ -457,7 +465,7 @@ $emirates = DB::table('states')
   });
 </script>
 <script>
-  function activatePlacesSearch(){
+  function activatePlacesSearch() {
     var input = document.getElementById('search_term');
     var autocomplete = new google.maps.places.Autocomplete(input);
   }
@@ -466,13 +474,13 @@ $emirates = DB::table('states')
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIKJ3sctoh0zMf_1G2GhPRvVy5c5-anY&libraries=places&callback=activatePlacesSearch"></script>
 
 <script>
-  $ ("#fileUpload1").change(function () {
-   var fileInput = document.getElementById('fileUpload1');
-   var fileUrl = window.URL.createObjectURL(fileInput.files[0]);
-   $(".video").attr("src", fileUrl);
-   $(".video").show();
-   $("#prop_video").hide();
+  $("#fileUpload1").change(function() {
+    var fileInput = document.getElementById('fileUpload1');
+    var fileUrl = window.URL.createObjectURL(fileInput.files[0]);
+    $(".video").attr("src", fileUrl);
+    $(".video").show();
+    $("#prop_video").hide();
 
-});
+  });
 </script>
 @stop
