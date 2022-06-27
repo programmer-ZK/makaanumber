@@ -13,6 +13,8 @@ use Symfony\Component\ErrorHandler\ErrorRenderer\HtmlErrorRenderer;
 use Symfony\Component\ErrorHandler\Exception\FlattenException;
 use Throwable;
 use URL;
+date_default_timezone_set('Asia/Dubai');
+
 
 class EmailHandler
 {
