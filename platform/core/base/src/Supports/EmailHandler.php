@@ -293,7 +293,7 @@ class EmailHandler
             'site_title'       => setting('admin_title'),
             'site_url'         => url(''),
             'site_logo'        => setting('admin_logo') ? RvMedia::getImageUrl(setting('admin_logo')) : url(config('core.base.general.logo')),
-            'date_time'        => now()->toDateTimeString(),
+            'date_time'        => date('m/d/Y h:i:s a', time()),
             'date_year'        => now()->format('Y'),
             'site_admin_email' => get_admin_email()->first(),
         ];
