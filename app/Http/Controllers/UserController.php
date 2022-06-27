@@ -75,8 +75,8 @@ class UserController extends Controller
           array(
             'user_id' => $user->id,
             'role_id' => 2,
-            'created_at' => date('m/d/Y h:i:s a', time()),
-            'updated_at' => date('m/d/Y h:i:s a', time()),
+            'created_at' => date('m/d/Y h:i:s', time()),
+            'updated_at' => date('m/d/Y h:i:s', time()),
           )
         );
 
@@ -86,7 +86,7 @@ class UserController extends Controller
         $date_time = date('m/d/Y h:i:s a', time());
         $body = $_SERVER['SERVER_NAME'] . "/activation/$randomString";
         $data = array("name" => $to_name, "body" => $body, 'date_time' => $date_time);
-        
+
         Mail::send("activation", $data, function ($message) use ($to_name, $to_email) {
           $message->to($to_email, $to_name)
             ->subject("Account Activation Email Makanumber.com");
@@ -173,8 +173,8 @@ class UserController extends Controller
           array(
             'user_id' => $user->id,
             'role_id' => 3,
-            'created_at' => date('m/d/Y h:i:s a', time()),
-            'updated_at' => date('m/d/Y h:i:s a', time()),
+            'created_at' => date('m/d/Y h:i:s', time()),
+            'updated_at' => date('m/d/Y h:i:s', time()),
           )
         );
 
