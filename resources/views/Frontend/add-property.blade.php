@@ -366,8 +366,9 @@ $emirates = DB::table('states')
 
                   <input type="file" name="prop_video" id="fileUpload1" style="cursor:pointer;" />
                   <span class="fileName"></span>
-                  <input type="button" class="uploadButton" name="prop_video" value="+ Add Video" />
+                  <input type="button" class="uploadButton" id="prop_video" name="prop_video" value="Add Video" />
                 </div>
+                <video controls class="video" style="max-width: 100%; display: none;" ></video >
               </div>
 
             </div>
@@ -463,4 +464,15 @@ $emirates = DB::table('states')
   console.log(activatePlacesSearch());
 </script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIKJ3sctoh0zMf_1G2GhPRvVy5c5-anY&libraries=places&callback=activatePlacesSearch"></script>
+
+<script>
+  $ ("#fileUpload1").change(function () {
+   var fileInput = document.getElementById('fileUpload1');
+   var fileUrl = window.URL.createObjectURL(fileInput.files[0]);
+   $(".video").attr("src", fileUrl);
+   $(".video").show();
+   $("#prop_video").hide();
+
+});
+</script>
 @stop
