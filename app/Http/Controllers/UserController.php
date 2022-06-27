@@ -75,8 +75,8 @@ class UserController extends Controller
           array(
             'user_id' => $user->id,
             'role_id' => 2,
-            'created_at' => date('m/d/Y h:i:s', time()),
-            'updated_at' => date('m/d/Y h:i:s', time()),
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
           )
         );
 
@@ -173,8 +173,8 @@ class UserController extends Controller
           array(
             'user_id' => $user->id,
             'role_id' => 3,
-            'created_at' => date('m/d/Y h:i:s', time()),
-            'updated_at' => date('m/d/Y h:i:s', time()),
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
           )
         );
 
@@ -216,7 +216,7 @@ class UserController extends Controller
       ]);
 
       $user = UserModel::find($id);
-      $user->email_verified_at =  date('m/d/Y h:i:s a', time());
+      $user->email_verified_at =  Carbon::now()->toDateTimeString();
       $user->update();
 
       return view('Frontend.activate', ['name' => $name]);
